@@ -1,11 +1,14 @@
 {
-  "name": "starter-restaurant-reservation",
+  "name": "restaurant-reservation",
   "version": "1.0.0",
-  "description": "Starter project restaurant reservation system",
+  "engines": {
+    "node": "16.15.0"
+  },
+  "description": "project restaurant reservation system",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Thinkful-Ed/starter-restaurant-reservation"
+    "url": "https://github.com/robbiemwoolf/restaurant-reservation"
   },
   "scripts": {
     "build": "npm -prefix front-end run build",
@@ -46,7 +49,7 @@
     "test:frontend:watch": "npm test --prefix ./front-end"
   },
   "keywords": [],
-  "author": "Thinkful, Inc.",
+  "author": "Robbie Woolf",
   "license": "UNLICENSED",
   "devDependencies": {
     "npm-run-all": "^4.1.5"

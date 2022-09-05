@@ -47,5 +47,8 @@
   },
   "keywords": [],
   "author": "Robbie Woolf",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "npm": "^8.19.1"
+  }
 }

@@ -8,6 +8,7 @@ export default function ReservationTable({
     setReservations,
     setError,
   }) {
+    
     const history = useHistory() 
     if (!reservations) {
       return null 

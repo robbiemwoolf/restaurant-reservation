@@ -2,6 +2,7 @@ import React from 'react'
 import ReservationRow from './ReservationRow' 
 import { cancelReservation } from '../../utils/api' 
 import { useHistory } from 'react-router-dom' 
+import '../TableList/TableList.css'
 
 export default function ReservationTable({
     reservations,
@@ -42,8 +43,9 @@ export default function ReservationTable({
   
     return (
       <>
+        <div className='card soften'>
         <table className='table table-sm table-striped table-bordered'>
-          <thead>
+          <thead className='head'>
             <tr>
               <th scope='col'>#</th>
               <th scope='col'>First</th>
@@ -59,6 +61,7 @@ export default function ReservationTable({
           </thead>
           <tbody>{formatted}</tbody>
         </table>
+        </div>
       </>
     ) 
 }

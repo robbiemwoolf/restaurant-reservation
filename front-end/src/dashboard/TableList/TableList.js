@@ -1,5 +1,6 @@
 import React from 'react' 
 import TableInfo from './TableInfo' 
+import './TableList.css'
 
 export default function TableList({ tables, loadTables }) {
     if (!tables) {
@@ -13,9 +14,9 @@ export default function TableList({ tables, loadTables }) {
     }) 
 
     return (
-        <div>
-            <table className='table table-sm table-striped table-bordered'>
-            <thead>
+        <div className= 'card soften my-4'>
+            <table className='table table-sm table-hover'>
+            <thead className='head'>
                 <tr>
                 <th scope='col'>#</th>
                 <th scope='col'>Table</th>

@@ -26,7 +26,7 @@ export default function FinishButton({ status, table, loadTables }) {
                 data-table-id-finish={table.table_id}
                 type='button'
                 onClick={handleClick}
-                className='btn btn-sm btn-primary'
+                className='btn btn-sm btn-secondary'
             >
                 Finish
             </button>

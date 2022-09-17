@@ -14,8 +14,8 @@ export default function ReservationRow({ reservation, cancelRes }) {
     return (
         <tr>
             <th scope='row'>{reservation_id}</th>
+            <td>{last_name},</td>
             <td>{first_name}</td>
-            <td>{last_name}</td>
             <td>{mobile_number}</td>
             <td className='text-center'>{people}</td>
             <td>{reservation_time}</td>

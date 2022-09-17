@@ -68,13 +68,17 @@ function Dashboard({ date }) {
             </button>
         </div>
         <ErrorAlert error={reservationsError} />
-        <ReservationTable
-            reservations={reservations}
-            setReservations={setReservations}
-            setError={setReservationsError}
-        />
-        <div>
+        <div className='row'>
+        <div className='col'>
+            <ReservationTable
+                reservations={reservations}
+                setReservations={setReservations}
+                setError={setReservationsError}
+            />
+        </div>
+        <div className='col'>
             <TableList tables={tables} loadTables={loadTables} />
+        </div>
         </div>
         </main>
     ) 

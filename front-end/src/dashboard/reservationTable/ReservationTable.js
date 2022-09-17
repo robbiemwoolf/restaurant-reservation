@@ -43,13 +43,13 @@ export default function ReservationTable({
   
     return (
       <>
-        <div className='card soften'>
-        <table className='table table-sm table-striped table-bordered text-white'>
+        <div className='card soften align-items-center'>
+        <table className='table table-sm table-striped text-white mt-4 mx-4'>
           <thead className='head'>
             <tr>
               <th scope='col'>#</th>
-              <th scope='col'>First</th>
               <th scope='col'>Last</th>
+              <th scope='col'>First</th>
               <th scope='col'>Number</th>
               <th scope='col'>Guests</th>
               <th scope='col'>Time</th>

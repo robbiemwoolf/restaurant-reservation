@@ -44,7 +44,7 @@ export default function ReservationTable({
     return (
       <>
         <div className='card soften'>
-        <table className='table table-sm table-striped table-bordered'>
+        <table className='table table-sm table-striped table-bordered text-white'>
           <thead className='head'>
             <tr>
               <th scope='col'>#</th>

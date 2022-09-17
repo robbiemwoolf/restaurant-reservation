@@ -10,7 +10,7 @@ import './App.css'
  */
 function App() {
   return (
-    <div className='background'>
+    <div className='background text-white'>
     <Switch>
       <Route path="/">
         <Layout />

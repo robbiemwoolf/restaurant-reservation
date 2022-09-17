@@ -15,7 +15,7 @@ export default function TableList({ tables, loadTables }) {
 
     return (
         <div className= 'card soften my-4'>
-            <table className='table table-sm table-hover'>
+            <table className='table table-sm table-hover text-white'>
             <thead className='head'>
                 <tr>
                 <th scope='col'>#</th>

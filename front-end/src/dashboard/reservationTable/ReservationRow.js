@@ -17,7 +17,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
             <td>{first_name}</td>
             <td>{last_name}</td>
             <td>{mobile_number}</td>
-            <td>{people}</td>
+            <td className='text-center'>{people}</td>
             <td>{reservation_time}</td>
             <td data-reservation-id-status={reservation_id}>
                 {status}

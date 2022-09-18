@@ -6,12 +6,12 @@ export default function TableInfo({ table, loadTables }) {
     return (
         <div className= 'card p-3 my-4 table-card text-white'>
             <div className='row'>
-                <p className='col'>id:</p>
-                <p className='col text-right'>{table.table_id}</p>
-            </div>
-            <div className='row'>
                 <p className='col'>Table Name:</p>
                 <p className='col text-right'>{table.table_name}</p>
+            </div>
+            <div className='row'>
+                <p className='col'>ID:</p>
+                <p className='col text-right'>{table.table_id}</p>
             </div>
             <div className='row'>
                 <p className='col'>Capacity:</p>

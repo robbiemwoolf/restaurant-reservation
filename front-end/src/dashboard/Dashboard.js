@@ -5,7 +5,6 @@ import ErrorAlert from '../layout/ErrorAlert'
 import { useHistory } from 'react-router-dom' 
 import { previous, next } from '../utils/date-time'
 import TableList from './TableList/TableList'
-import './Dashboard.css' 
 
 /**
  * Defines the dashboard page.
@@ -53,8 +52,8 @@ function Dashboard({ date }) {
 
     return (
         <main>
-        <h1 className='d-md-flex justify-content-center'>Dashboard</h1>
-        <div className='d-md-flex mb-3 justify-content-center'>
+        <h1 className='d-flex justify-content-center'>Dashboard</h1>
+        <div className='d-flex mb-3 justify-content-center'>
             <h4 className='mb-0'>Reservations for {date}</h4>
         </div>
         <div className='pb-2 d-flex justify-content-center'>
@@ -69,15 +68,15 @@ function Dashboard({ date }) {
             </button>
         </div>
         <ErrorAlert error={reservationsError} />
-        <div className='d-flex row dashboard justify-content-center'>
-            <div className='col-7 pt-4'>
+        <div className='d-flex row justify-content-center'>
+            <div className='col-6'>
                 <ReservationTable
                     reservations={reservations}
                     setReservations={setReservations}
                     setError={setReservationsError}
                 />
             </div>
-            <div className='col-4'>
+            <div className='col-6'>
                 <TableList tables={tables} loadTables={loadTables} />
             </div>
         </div>

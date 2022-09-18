@@ -60,7 +60,7 @@ export default function Tables() {
                 <input
                     type='text'
                     name='table_name'
-                    className='form-control mb-1 small'
+                    className='form-control mb-1 input-table'
                     id='table_name'
                     placeholder='Table'
                     value={tableForm.table_name}
@@ -71,7 +71,7 @@ export default function Tables() {
                 <input
                     type='number'
                     name='capacity'
-                    className='form-control mb-1 small'
+                    className='form-control mb-1 input-table'
                     id='capacity'
                     placeholder='Number of guests'
                     value={tableForm.capacity}

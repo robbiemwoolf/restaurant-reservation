@@ -11,10 +11,8 @@ export default function ReservationRow({ reservation, cancelRes }) {
         : null
     }
 
+    // put reservation time in xx:xx format
     const hoursAndMinutes = reservation_time.toString().split('').slice(0, 5)
-
-
-    console.log(hoursAndMinutes)
 
     return (
         <tr>

@@ -14,7 +14,7 @@ export default function TableList({ tables, loadTables }) {
     }) 
 
     return (
-        <div className=''>
+        <div>
             {formatted}
         </div>
     ) 

@@ -1,11 +1,4 @@
-.soften {
+.table-card {
     background-color: rgba(246, 182, 133, 0.2);
-}
-
-.head {
-    background-color: rgb(114, 70, 28, .6);
-}
-
-.table {
     max-width: 240px;
 }

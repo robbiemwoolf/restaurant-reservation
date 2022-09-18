@@ -2,7 +2,7 @@ import React from 'react'
 import ReservationRow from './ReservationRow' 
 import { cancelReservation } from '../../utils/api' 
 import { useHistory } from 'react-router-dom' 
-import '../TableList/TableList.css'
+import './Reservation.css'
 
 export default function ReservationTable({
     reservations,
@@ -10,7 +10,8 @@ export default function ReservationTable({
     setError,
   }) {
     
-    const history = useHistory() 
+    const history = useHistory()
+     
     if (!reservations) {
       return null 
     }

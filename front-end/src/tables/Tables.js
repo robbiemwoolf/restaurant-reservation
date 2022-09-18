@@ -93,7 +93,7 @@ export default function Tables() {
                 </div>
             </div>
         </form>
-        <div className=''>
+        <div className='d-flex justify-content-center'>
             <TableList tables={tables} loadTables={loadTables} />
         </div>
         </>

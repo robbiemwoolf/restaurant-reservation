@@ -11,6 +11,11 @@ export default function ReservationRow({ reservation, cancelRes }) {
         : null
     }
 
+    const hoursAndMinutes = reservation_time.toString().split('').slice(0, 5)
+
+
+    console.log(hoursAndMinutes)
+
     return (
         <tr>
             <th scope='row'>{reservation_id}</th>
@@ -18,14 +23,14 @@ export default function ReservationRow({ reservation, cancelRes }) {
             <td>{first_name}</td>
             <td>{mobile_number}</td>
             <td className='text-center'>{people}</td>
-            <td>{reservation_time}</td>
+            <td>{hoursAndMinutes}</td>
             <td data-reservation-id-status={reservation_id}>
                 {status}
             </td>
             <td>
                 {status === 'booked' ? (
                 <a
-                    className='btn btn-secondary'
+                    className='btn btn-success'
                     role='button'
                     href={`/reservations/${reservation_id}/seat`}
                 >

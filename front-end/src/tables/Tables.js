@@ -80,7 +80,7 @@ export default function Tables() {
                     required
                 />            
                 <div className='d-flex justify-content-center'>
-                    <button type='submit' className='btn btn-primary mr-1'>
+                    <button type='submit' className='btn btn-success mr-1'>
                         Submit
                     </button>
                     <button

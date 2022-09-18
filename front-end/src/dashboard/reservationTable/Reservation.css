@@ -1,5 +1,6 @@
-.soften {
+.res-card {
     background-color: rgba(246, 182, 133, 0.2);
+    max-width: 280px;
 }
 
 .head {

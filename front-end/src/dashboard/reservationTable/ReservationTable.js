@@ -11,7 +11,7 @@ export default function ReservationTable({
   }) {
     
     const history = useHistory()
-     
+
     if (!reservations) {
       return null 
     }
@@ -44,24 +44,7 @@ export default function ReservationTable({
   
     return (
       <>
-        <div className='card soften align-items-center'>
-        <table className='table table-sm table-striped text-white mt-4 mx-4'>
-          <thead className='head'>
-            <tr>
-              <th scope='col'>Last</th>
-              <th scope='col'>First</th>
-              <th scope='col'>Number</th>
-              <th scope='col'>Guests</th>
-              <th scope='col'>Time</th>
-              <th scope='col'>Status</th>
-              <th scope='col'>Seat</th>
-              <th scope='col'>Edit</th>
-              <th scope='col'>Cancel</th>
-            </tr>
-          </thead>
-          <tbody>{formatted}</tbody>
-        </table>
-        </div>
+        {formatted}
       </>
     ) 
 }

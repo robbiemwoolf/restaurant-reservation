@@ -15,36 +15,31 @@ export default function ReservationRow({ reservation, cancelRes }) {
     const hoursAndMinutes = reservation_time.toString().split('').slice(0, 5)
 
     return (
-        <tr>
-            <td>{last_name},</td>
-            <td>{first_name}</td>
-            <td>{mobile_number}</td>
-            <td className='text-center'>{people}</td>
-            <td>{hoursAndMinutes}</td>
-            <td data-reservation-id-status={reservation_id}>
+        <div className='card d-flex res-card text-center m-4 py-4'>
+            <b className='pb-3'>Reservation for {hoursAndMinutes}</b>
+            <p>{last_name}, {first_name}</p>
+            <p>Party of {people}</p>
+            <p>{mobile_number}</p>
+            <p data-reservation-id-status={reservation_id}>
                 {status}
-            </td>
-            <td>
+            </p>
+            <div className='row d-flex justify-content-center'>
                 {status === 'booked' ? (
-                <a
-                    className='btn btn-success'
-                    role='button'
-                    href={`/reservations/${reservation_id}/seat`}
-                >
-                    Seat
-                </a>
+                    <a
+                        className='btn btn-success'
+                        role='button'
+                        href={`/reservations/${reservation_id}/seat`}
+                    >
+                        Seat
+                    </a>
                 ) : null}
-            </td>
-            <td>
-                <a
-                    className='btn btn-secondary'
-                    role='button'
-                    href={`/reservations/${reservation_id}/edit`}
-                >
-                Edit
-                </a>
-            </td>
-            <td>
+                    <a
+                        className='btn btn-secondary mx-2'
+                        role='button'
+                        href={`/reservations/${reservation_id}/edit`}
+                    >
+                        Edit
+                    </a>
                 <button
                     className='btn btn-danger'
                     data-reservation-id-cancel={reservation_id}
@@ -52,7 +47,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
                 >
                     Cancel
                 </button>
-            </td>
-        </tr>
+            </div>
+        </div>
     )
 }

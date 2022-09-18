@@ -4,7 +4,8 @@ import { listReservations, listTables } from '../utils/api'
 import ErrorAlert from '../layout/ErrorAlert' 
 import { useHistory } from 'react-router-dom' 
 import { previous, next } from '../utils/date-time'
-import TableList from './TableList/TableList' 
+import TableList from './TableList/TableList'
+import './Dashboard.css' 
 
 /**
  * Defines the dashboard page.
@@ -68,17 +69,17 @@ function Dashboard({ date }) {
             </button>
         </div>
         <ErrorAlert error={reservationsError} />
-        <div className='row'>
-        <div className='col'>
-            <ReservationTable
-                reservations={reservations}
-                setReservations={setReservations}
-                setError={setReservationsError}
-            />
-        </div>
-        <div className='col'>
-            <TableList tables={tables} loadTables={loadTables} />
-        </div>
+        <div className='d-flex row dashboard justify-content-center'>
+            <div className='col-7 pt-4'>
+                <ReservationTable
+                    reservations={reservations}
+                    setReservations={setReservations}
+                    setError={setReservationsError}
+                />
+            </div>
+            <div className='col-4'>
+                <TableList tables={tables} loadTables={loadTables} />
+            </div>
         </div>
         </main>
     ) 

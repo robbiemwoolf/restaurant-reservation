@@ -47,7 +47,6 @@ export default function ReservationTable({
         <table className='table table-sm table-striped text-white mt-4 mx-4'>
           <thead className='head'>
             <tr>
-              <th scope='col'>#</th>
               <th scope='col'>Last</th>
               <th scope='col'>First</th>
               <th scope='col'>Number</th>

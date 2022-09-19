@@ -21,7 +21,7 @@ export default function FinishButton({ status, table, loadTables }) {
 
     return (
         status === 'Occupied' && (
-        <td>
+        <div>
             <button
                 data-table-id-finish={table.table_id}
                 type='button'
@@ -30,7 +30,7 @@ export default function FinishButton({ status, table, loadTables }) {
             >
                 Finish
             </button>
-        </td>
+        </div>
         )
     ) 
 }

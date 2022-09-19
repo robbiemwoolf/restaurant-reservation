@@ -15,7 +15,7 @@ export default function Reservations() {
         mobile_number: '',
         reservation_date: '',
         reservation_time: '',
-        people: null,
+        people: '',
     } 
 
     const [formData, setFormData] = useState({ ...initialFormData }) 

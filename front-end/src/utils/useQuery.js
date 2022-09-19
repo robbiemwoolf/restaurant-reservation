@@ -3,14 +3,14 @@
  *
  * @example
  *
- *     const query = useQuery();
- *     const date = query.get("date")
+ *     const query = useQuery()
+ *     const date = query.get('date')
  */
 
- import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
 
- function useQuery() {
-   return new URLSearchParams(useLocation().search);
- }
+function useQuery() {
+    return new URLSearchParams(useLocation().search)
+}
  
- export default useQuery;
+export default useQuery

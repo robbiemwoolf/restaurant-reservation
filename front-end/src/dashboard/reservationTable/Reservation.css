@@ -1,5 +1,6 @@
 .res-card {
     background-color: rgba(246, 182, 133, 0.2);
+    min-width: 220px;
     max-width: 280px;
 }
 

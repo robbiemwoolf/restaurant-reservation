@@ -1,4 +1,6 @@
 .background {
     background-image: url('./images/anastasia-zhenina-whiskey.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%;
 }

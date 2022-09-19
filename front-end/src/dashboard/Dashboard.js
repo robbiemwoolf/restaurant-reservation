@@ -69,14 +69,14 @@ function Dashboard({ date }) {
         </div>
         <ErrorAlert error={reservationsError} />
         <div className='d-flex row justify-content-center'>
-            <div className='col-6'>
+            <div className='col'>
                 <ReservationTable
                     reservations={reservations}
                     setReservations={setReservations}
                     setError={setReservationsError}
                 />
             </div>
-            <div className='col-6'>
+            <div className='col'>
                 <TableList tables={tables} loadTables={loadTables} />
             </div>
         </div>

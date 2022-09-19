@@ -14,7 +14,7 @@ export default function TableList({ tables, loadTables }) {
     }) 
 
     return (
-        <div>
+        <div className='d-flex justify-content-center flex-wrap'>
             {formatted}
         </div>
     ) 

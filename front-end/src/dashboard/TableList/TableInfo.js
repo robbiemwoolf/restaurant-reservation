@@ -4,7 +4,7 @@ import FinishButton from './FinishButton'
 export default function TableInfo({ table, loadTables }) {
     const status = table.reservation_id ? 'Occupied' : 'Free' 
     return (
-        <div className= 'card p-3 my-4 table-card text-white'>
+        <div className= 'card p-3 my-4 mx-2 table-card text-white'>
             <div className='row'>
                 <p className='col'>Table Name:</p>
                 <p className='col text-right'>{table.table_name}</p>

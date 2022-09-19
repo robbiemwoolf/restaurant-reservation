@@ -9,7 +9,7 @@ import './App.css'
  */
 function App() {
     return (
-        <div className='background text-white'>
+        <div className='background text-white height-fill'>
             <Switch>
                 <Route path='/'>
                     <Layout />

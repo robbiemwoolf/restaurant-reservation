@@ -9,7 +9,7 @@ You can view the app here: 'https://reservation-client-rw.herokuapp.com/dashboar
 ## Installation
 
 1. Run `npm install` under the root folder to install project dependencies.
-2. Run `npm run start` to start your server.
+2. Run `npm run start:backend` to start your server.
 
 ## Features
 

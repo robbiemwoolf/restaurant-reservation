@@ -43,7 +43,7 @@ export default function ReservationTable({
     }) 
   
     return (
-      <div className='d-flex justify-content-center flex-wrap'>
+      <div className='d-flex justify-content-center flex-wrap my-2'>
         {formatted}
       </div>
     ) 

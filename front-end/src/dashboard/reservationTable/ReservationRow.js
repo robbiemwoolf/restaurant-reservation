@@ -15,7 +15,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
     const hoursAndMinutes = reservation_time.toString().split('').slice(0, 5)
 
     return (
-        <div className='card d-flex res-card text-center m-4 py-4'>
+        <div className='card d-flex res-card text-center m-2 py-4'>
             <b className='pb-3'>Reservation for {hoursAndMinutes}</b>
             <p>{last_name}, {first_name}</p>
             <p>Party of {people}</p>

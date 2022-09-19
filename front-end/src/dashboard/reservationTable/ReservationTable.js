@@ -13,7 +13,9 @@ export default function ReservationTable({
     const history = useHistory()
 
     if (!reservations) {
-        return null 
+        return (
+            <p>There are no reservations scheduled.</p>
+        ) 
     }
       
     async function cancelRes(reservation) {
@@ -44,7 +46,7 @@ export default function ReservationTable({
 
     return (
         <div className='d-flex justify-content-center flex-wrap my-2'>
-            {formatted}
+            { reservations.length === 0 ? (<div className='mt-2'>There are no scheduled reservations.</div>) : formatted }
         </div>
     ) 
 }

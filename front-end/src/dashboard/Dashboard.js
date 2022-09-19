@@ -53,8 +53,8 @@ function Dashboard({ date }) {
     return (
         <main>
         <h1 className='d-flex justify-content-center'>Dashboard</h1>
-        <div className='d-flex mb-3 justify-content-center'>
-            <h4 className='mb-0'>Reservations for {date}</h4>
+        <div className='d-flex justify-content-center'>
+            <h4 className='mb-3 text-nowrap'>Reservations for {date}</h4>
         </div>
         <div className='pb-2 d-flex justify-content-center'>
             <button className='btn btn-secondary mr-1' onClick={handlePrev}>
@@ -70,11 +70,13 @@ function Dashboard({ date }) {
         <ErrorAlert error={reservationsError} />
         <div className='d-flex row justify-content-center'>
             <div className='col'>
+                { !reservations ? (<p>hi</p>) :
                 <ReservationTable
                     reservations={reservations}
                     setReservations={setReservations}
                     setError={setReservationsError}
                 />
+                }
             </div>
             <div className='col'>
                 <TableList tables={tables} loadTables={loadTables} />

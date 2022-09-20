@@ -21,16 +21,15 @@ export default function FinishButton({ status, table, loadTables }) {
 
     return (
         status === 'Occupied' && (
-        <div>
             <button
                 data-table-id-finish={table.table_id}
                 type='button'
                 onClick={handleClick}
-                className='btn btn-sm btn-secondary'
+                className='btn btn-sm btn-success'
             >
                 Finish
             </button>
-        </div>
+        
         )
     ) 
 }

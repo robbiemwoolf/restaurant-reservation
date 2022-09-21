@@ -18,8 +18,8 @@ export default function TableInfo({ table, loadTables }) {
                 <p className='col text-right'>{table.capacity}</p>
             </div>
             <div className='row'>
-                <p className='col' data-table-id-status={table.table_id}>Status:</p>
-                <p className='col text-right'>{status}</p>
+                <p className='col'>Status:</p>
+                <p className='col text-right' data-table-id-status={table.table_id}>{status}</p>
             </div>
             <div className='d-flex justify-content-center'>
                 <FinishButton

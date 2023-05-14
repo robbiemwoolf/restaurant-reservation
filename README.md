@@ -1,10 +1,10 @@
-# Periodic Tables: Restaurant Reservation System
+# Restaurant Reservation System
 
-A reservation system meant to be used by restaurant personnel. Feel free to use this application to keep track, create, update and remove reservations, tables, and statuses.
+A reservation system meant to be used by restaurant personnel. Feel free to use this application to manage, create, update and remove reservations, tables, and statuses.
 
 ## Demo
 
-You can view the app here: 'https://reservation-client-rw.herokuapp.com/dashboard'
+You can view the app here: ```https://restaurant-reservatoin-rw-client.onrender.com/dashboard```
 
 ## Installation
 
@@ -63,4 +63,8 @@ Once the party at any table is done with their table the user can click the "fin
 
 ## Future Features
 
-I have plans to provide the best user experience with extensive styling and additional features. If you would like to submit any feature requests or bugs, please head to the issues tab and I will be happy to review it.
+I have plans to provide the best user experience with extensive styling and additional features. If you would like to submit any feature requests or improvements to this project please head to the issues tab and I will be happy to review it.
+
+## Find a bug?
+
+If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
